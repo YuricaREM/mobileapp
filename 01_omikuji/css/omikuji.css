@@ -58,7 +58,7 @@ text-align: center;
     margin: 0;
     font-weight: 800;
 }
-}
+
 #btn1:hover {
     animation : shaking 0.3s infinite;
 }

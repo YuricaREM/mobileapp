@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded",function(){
         });
         setTimeout(
             function(){    
-   let popMessage= "いらっしゃる！おみくじひいてって！";
+   let popMessage= "いらっしゃい！おみくじひいてって！";
    window.alert(popMessage);
     },
     "5000"

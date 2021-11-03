@@ -171,6 +171,7 @@ footer> p {
 /*******************************************************/
 @media screen and (max-width: 480px) {
     body{
-        background-size: auto 812px;
+        background-position: 75% 0%;
+        background-size: auto 850px;
     }
 }
