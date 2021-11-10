@@ -8,6 +8,7 @@ function() {
         viewStorage();
         saveLocalStorage();
         selectTable();
+        allClearLocalStoraeg();
     }
   },false
 );
@@ -103,4 +104,28 @@ function viewStorage(){
         td3.innerHTML = localStorage.getItem(w_key);     
 
     }
+    $("#table1").tablesorter({
+        sortList:[[1,0]]
+      });
+      $("#table1").trigger("update");
 };
+
+function allClearLocalStoraeg(){
+  const allClear = document.getElementById("allClear");
+  allClear.addEventListener ("click",
+  function(e) {
+      e.preventDefault();
+      let w_confirm = confirm ("LocalStorageのデータを全て削除します。 \nよろしいですか？");
+      if (w_confirm === true) {
+          localStorage.clear();
+          viewStorage();
+          let w_msg = "LocalStorageのデータを全て削除しました"
+          window.alert(w_msg);
+          document.getElementById("textKey").value = "";
+          document.getElementById("textMemo").value = "";
+
+      } 
+   },false
+ );
+};
+
