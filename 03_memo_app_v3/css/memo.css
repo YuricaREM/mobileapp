@@ -24,7 +24,7 @@ body{
    background-color: aqua;
    background-repeat: no-repeat;
    background-size: cover; 
-   overflow: hidden;
+   /*overflow: hidden;*/
    }
 
 
