@@ -96,7 +96,7 @@ function isSelect(selectSquare) {
         flag = "bear-flag";
     } else {
 
-        let music = new Audio(gameSound[0]);
+        let music = new Audio(gameSound[1]);
         music.currentTime = 0;
         music.play();
 
